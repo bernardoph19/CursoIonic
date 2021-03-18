@@ -1,0 +1,21 @@
+
+<app-header titulo="Checkbox">
+
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="https://www.euston96.com/wp-content/uploads/2019/05/Bernardo-O%E2%80%99Higgins.jpg">
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</app-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let check of data" (click)="Seleccionado(check)">
+    <ion-label>{{ check.name}} </ion-label>
+    <ion-checkbox  [(ngModel)]="check.selected" [color]="check.name" > </ion-checkbox>
+  </ion-item>
+</ion-list>
+
+</ion-content>

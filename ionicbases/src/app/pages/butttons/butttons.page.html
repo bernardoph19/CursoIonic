@@ -1,0 +1,66 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Atras">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Botones</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="tertiary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+
+      <ion-button color="danger">
+        <ion-icon name="eyedrop-outline"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- Botones  Nomales -->
+<ion-content padding>
+  <ion-button size="small" expand="full"> small </ion-button>
+  <ion-button size="default" expand="full"> Default</ion-button>
+  <ion-button size="large" expand="full"> Large </ion-button>
+
+  <!-- anchor -->
+  <ion-button expand="full" class="top-20" routerLink="/alert" color="tertiary">
+    anchor
+  </ion-button>
+
+  <!-- ion.row + ion-col -->
+
+  <ion-row class="top-20">
+    <ion-col>
+      <ion-button expand="full" routerLink="/action-sheep" color="warning">
+        Action Sheep
+      </ion-button>
+    </ion-col>
+
+
+    <ion-col>
+      <ion-button expand="full" routerLink="/alert" color="danger">
+        Alertas
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-button expand="full" fill="outline">Outline + Full</ion-button>
+<ion-button expand="block" fill="outline">Outline + Block</ion-button>
+<ion-button shape="round" fill="outline">Outline + Round</ion-button>
+  <!-- fill -->
+  <ion-button class="top-20"  fill="clear">Clear</ion-button>
+  <ion-button  class="top-20" fill="outline">outline</ion-button>
+  <ion-button  class="top-20" fill="solid">outline</ion-button>
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+  <ion-button>
+    Right Icon
+    <ion-icon slot="end" name="star"></ion-icon>
+  </ion-button>
+
+</ion-content>

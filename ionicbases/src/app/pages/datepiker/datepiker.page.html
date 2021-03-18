@@ -1,0 +1,41 @@
+<app-header titulo="DateTimer">
+</app-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-list-header>
+      <ion-label class="ion-color-success">Datos de Nacimiento </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-datetime placeholder="fecha Nacimiento" value="{{ fechaNac  | date:'yyyy-MM-dd'}}"
+        display-format="YYYY-MMM-DD" [ngModel]="fechaNac.toISOString()" cancelText="Cancelar!!"
+        (ionChange)="cambioFecha( $event )">
+      </ion-datetime>
+      <ion-icon name="calendar-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+    </ion-list-header>
+
+  <!-- meses y años  minimos -->
+    <ion-item>
+      <ion-label>Min y Max</ion-label>
+      <ion-datetime
+      placeholder="yyyy-mm-dd"
+      display-format="YYYY-MMM-DD"
+      min="2019-02-12"
+      max="2021-02-17"
+      > </ion-datetime>
+    </ion-item>
+
+    <!-- Mostrar Solo Años -->
+    <ion-item>
+      <ion-label> Mostrar Solo Años</ion-label>
+      <ion-datetime [pickerOptions]="customPikerOptions",
+      [(ngModel)] ="fechaNac"
+      > </ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons color="tertiary">
+      <ion-back-button text="Atras">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title > alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button
+  (click)="presentAlert()"
+    color="danger">
+    Mostrtar Alert
+  </ion-button>
+
+
+  <ion-button
+  (click)="presentAlert()"
+    color="secondary">
+    Mostrtar Alert
+  </ion-button>
+
+
+  <ion-button color="success" (click)="tabs(1)" [ngClass]="{'': bernaTab !== 1, '': bernaTab === 1}">
+    Tabs 01
+  </ion-button>
+  <ion-button color="danger" (click)="tabs(2)" [ngClass]="{'': bernaTab !== 2, '': bernaTab === 2}">
+    Tabs 02
+  </ion-button>
+
+
+ <!-- card 01 -->
+   <ion-card [ngClass]="{'hidden': bernaTab !== 1, 'block': bernaTab === 1}">
+     <ion-card-content>
+       <ion-title class="alex">Hola Alex</ion-title>
+       <ion-img style="border: 4px;"> </ion-img>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, esse dolorum sequi adipisci nesciunt obcaecati quas ullam? Aperiam architecto sunt laborum dolor odio. Illum dolorem harum quidem iste dignissimos nisi!
+     </ion-card-content>
+   </ion-card>
+
+
+
+  <!-- card 02 -->
+   <ion-card [ngClass]="{'hidden': bernaTab !== 2, 'block': bernaTab === 2}">
+     <ion-card-content>
+       <h1 class="ber">Hola Bernardo</h1>
+ eres muy malo debes morrite
+      </ion-card-content>
+   </ion-card>
+
+
+</ion-content>

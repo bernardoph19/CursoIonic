@@ -1,0 +1,99 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+.berna span, .berna .sc-ion-action-sheet-md{
+  color: white;
+  background: red;
+}
+
+.success span, .success .action-sheet-icon {
+  color: rgba(9, 160, 9, 0.473);
+}
+
+
+.cancel span, .cancel .sc-ion-action-sheet-md{
+   color: blue;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 600;
+   font-size: 20px;
+}
+
+
+.can span{
+  border: red solid 2px;
+  border-radius: 5px;
+  color: red;
+  font-size: 14px;
+  font-style: normal;
+  padding: 5px 10px;
+
+}
+
+.okey span{
+  border: 2px solid green;
+  border-style: groove;
+  border-radius: 5px;
+  color: green;
+  background: rgba(0, 128, 0, 0.089);
+  padding: 5px 10px;
+}
+
+.alert-sub-title{
+  text-align: center;
+  color: blueviolet;
+  font-weight: 900;
+  font-size: x-large;
+}
+
+
+.color #alert-3-hdr{
+  color: brown;
+  text-decoration: crimson;
+  box-shadow: black;
+  background: blue;
+
+}
+
+.ber{
+  color: red;
+  font: x-large;
+}
+.alex{
+  color: green;
+  font: x-large;
+}
+
+
+.hidden{
+  display: none;
+}
+
+.block{
+  display: block;
+}
