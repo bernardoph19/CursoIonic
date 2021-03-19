@@ -11,6 +11,9 @@
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
 
+
+
+
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
   --ion-color-secondary-rgb: 61, 194, 255;
@@ -74,6 +77,75 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  // youtube
+  --ion-color-youtube: #ec0927;
+  --ion-color-youtube-rgb: 236,9,39;
+  --ion-color-youtube-contrast: #ffffff;
+  --ion-color-youtube-contrast-rgb: 255,255,255;
+  --ion-color-youtube-shade: #d00822;
+  --ion-color-youtube-tint: #ee223d;
+
+  // facebock
+--ion-color-facebook: #3b5998;
+--ion-color-facebook-rgb: 59,89,152;
+--ion-color-facebook-contrast: #ffffff;
+--ion-color-facebook-contrast-rgb: 255,255,255;
+--ion-color-facebook-shade: #344e86;
+--ion-color-facebook-tint: #4f6aa2;
+
+// git hub
+--ion-color-git: #24292e;
+--ion-color-git-rgb: 36,41,46;
+--ion-color-git-contrast: #ffffff;
+--ion-color-git-contrast-rgb: 255,255,255;
+--ion-color-git-shade: #202428;
+--ion-color-git-tint: #3a3e43;
+
+
+// fob
+--ion-color-fab: #b7018f;
+--ion-color-fab-rgb: 183,1,143;
+--ion-color-fab-contrast: #ffffff;
+--ion-color-fab-contrast-rgb: 255,255,255;
+--ion-color-fab-shade: #a1017e;
+--ion-color-fab-tint: #be1a9a;
+}
+
+
+
+
+.ion-color-youtube {
+  --ion-color-base: var(--ion-color-youtube) !important;
+  --ion-color-base-rgb: var(--ion-color-youtube-rgb) !important;
+  --ion-color-contrast: var(--ion-color-youtube-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-youtube-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-youtube-shade) !important;
+  --ion-color-tint: var(--ion-color-youtube-tint) !important;
+}
+.ion-color-facebook {
+  --ion-color-base: var(--ion-color-facebook) !important;
+  --ion-color-base-rgb: var(--ion-color-facebook-rgb) !important;
+  --ion-color-contrast: var(--ion-color-facebook-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-facebook-shade) !important;
+  --ion-color-tint: var(--ion-color-facebook-tint) !important;
+}
+.ion-color-git {
+  --ion-color-base: var(--ion-color-git) !important;
+  --ion-color-base-rgb: var(--ion-color-git-rgb) !important;
+  --ion-color-contrast: var(--ion-color-git-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-git-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-git-shade) !important;
+  --ion-color-tint: var(--ion-color-git-tint) !important;
+}
+.ion-color-fab {
+  --ion-color-base: var(--ion-color-fab) !important;
+  --ion-color-base-rgb: var(--ion-color-fab-rgb) !important;
+  --ion-color-contrast: var(--ion-color-fab-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-fab-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-fab-shade) !important;
+  --ion-color-tint: var(--ion-color-fab-tint) !important;
 }
 
 @media (prefers-color-scheme: dark) {

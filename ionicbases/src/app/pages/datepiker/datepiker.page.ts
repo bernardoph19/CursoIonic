@@ -6,18 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datepiker.page.scss'],
 })
 export class DatepikerPage implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  fechaNac : Date = new Date();
+  fechaNac: Date = new Date();
+  custonPikerOpcions;
+  customDate;
   ngOnInit() {
+    this.custonPikerOpcions = {
+      buttons: [{
+        text: 'Guardar',
+        handler: () => console.log('Clicked Save!')
+      }, {
+        text: 'Log',
+        handler: (event) => {
+          console.log('Clicked Log. Do not Dismiss.');
+          console.log(event);
+
+        }
+      }]
+    };
   }
 
-  cambioFecha( event ){
+  cambioFecha(event) {
     console.log('ionChange', event);
     console.log('Date', new Date(event.detail.value));
-
-
   }
+
 
 }

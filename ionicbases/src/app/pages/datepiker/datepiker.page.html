@@ -33,9 +33,20 @@
     <!-- Mostrar Solo Años -->
     <ion-item>
       <ion-label> Mostrar Solo Años</ion-label>
-      <ion-datetime [pickerOptions]="customPikerOptions",
-      [(ngModel)] ="fechaNac"
-      > </ion-datetime>
+      <ion-datetime
+      placeholder="YYYY"
+      display-format="YYYY"
+      min="2019"
+      max="2025"
+      value="2020"
+       > </ion-datetime>
+    </ion-item>
+
+    <!-- Fecha Personalizado -->
+    <ion-item>
+      <ion-label> Mostrar Solo Años</ion-label>
+      <ion-datetime [pickerOptions]="custonPikerOpcions"
+      [(ngModel)]="customDate" > </ion-datetime>
     </ion-item>
   </ion-list>
 </ion-content>

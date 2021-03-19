@@ -17,7 +17,11 @@ const routes: Routes = [
   {  path: 'butttons',    loadChildren: () => import('./pages/butttons/butttons.module').then( m => m.ButttonsPageModule)  },
   {  path: 'card',   loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)  },
   {  path: 'check',    loadChildren: () => import('./pages/check/check.module').then( m => m.CheckPageModule)  },
-  {   path: 'datepiker',    loadChildren: () => import('./pages/datepiker/datepiker.module').then( m => m.DatepikerPageModule)  },
+  {   path: 'datepiker',    loadChildren: () => import('./pages/datepiker/datepiker.module').then( m => m.DatepikerPageModule)  },  {
+    path: 'fab',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+
 
 
 ];
