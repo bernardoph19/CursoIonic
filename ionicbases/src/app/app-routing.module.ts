@@ -33,6 +33,14 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'comentario',
+    loadChildren: () => import('./pages/comentario/comentario.module').then( m => m.ComentarioPageModule)
+  },
 
 
 

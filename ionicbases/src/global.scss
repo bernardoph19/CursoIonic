@@ -44,6 +44,16 @@
    font-size: 20px;
 }
 
+.white{
+  background: white;
+  border: rgba(0, 0, 0, 0.37) solid 2px;
+  border-radius: 4px;
+  
+}
+.white:hover{
+  background: rgba(230, 120, 120, 0.534);
+}
+
 
 .can span{
   border: red solid 2px;
