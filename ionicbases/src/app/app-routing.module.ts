@@ -41,6 +41,10 @@ const routes: Routes = [
     path: 'comentario',
     loadChildren: () => import('./pages/comentario/comentario.module').then( m => m.ComentarioPageModule)
   },
+  {
+    path: 'ion-reorder',
+    loadChildren: () => import('./pages/ion-reorder/ion-reorder.module').then( m => m.IonReorderPageModule)
+  },
 
 
 
