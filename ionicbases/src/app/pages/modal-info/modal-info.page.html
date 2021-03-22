@@ -1,0 +1,14 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title text-capilize> {{nombre}} -- {{pais }} </ion-title>
+    <ion-button  (click)="salir()" slot="end">
+      <ion-icon  name="close-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-button color= "primary" (click)="salir()" expand="full" >Salir sin agumentos</ion-button>
+  <ion-button color= "success" (click)="guardar()" expand="full" >Salir con agumentos</ion-button>
+</ion-content>
