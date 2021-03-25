@@ -1,7 +1,7 @@
 {
-  "name": "ionicbases",
+  "name": "noticias",
   "integrations": {
-    "cordova": {}
+    "capacitor": {}
   },
   "type": "angular"
 }
